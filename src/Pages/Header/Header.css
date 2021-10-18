@@ -1,0 +1,14 @@
+.top-bar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgb(0, 0, 0, 0.4)), url("../../images/top-bar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    display: block;
+    height:55px
+}
+@media (max-width:992px) {
+.top-bar{
+    display: none;
+}
+}

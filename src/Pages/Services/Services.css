@@ -1,0 +1,12 @@
+.service-txt{
+    font-size: 40px;
+}
+.service-img{
+    height: 150px;
+}
+
+@media (max-width:992px){
+    .service-txt{
+        font-size: 30px;
+    }
+}
