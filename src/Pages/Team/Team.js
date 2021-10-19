@@ -18,9 +18,9 @@ const Team = () => {
 
     return (
         <div>
-            <Container className="pt-3 pb-5 text-center">
+            <Container className="pb-5 text-center">
                 <div className="text-center pb-5">
-                    <h5 className="text-primary pt-5">OUR TEAM</h5>
+                    <h5 className="text-primary pt-3">OUR TEAM</h5>
                     <h1 className="service-txt">Our Expert Doctors</h1>
                     <p className="border-bottom shadow-sm mt-3 mb-0"></p>
                 </div>

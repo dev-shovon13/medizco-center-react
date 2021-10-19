@@ -12,6 +12,11 @@
     cursor: pointer;
 }
 
+@media (max-width:668px){
+    .serviceInfo-img{
+        height: 150px !important;
+    }
+}
 @media (max-width:992px){
     .service-txt{
         font-size: 30px;

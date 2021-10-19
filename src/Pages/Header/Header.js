@@ -46,7 +46,10 @@ const Header = () => {
                                             <img src={user.photoURL} alt="" style={{ height: '35px', borderRadius: '50%' }} className="me-2" />
                                             :
                                             <img src={userAvatar} alt="" style={{ height: '35px', borderRadius: '50%' }} className="me-2" />}
-                                        <span className="fw-bold text-dark">{user.displayName}</span>
+                                        {user.displayName ?
+                                            <span className="fw-bold text-dark">{user.displayName}</span>
+                                            :
+                                            <span className="fw-bold text-dark">{user.email.substring(0, user.email.lastIndexOf("@"))}</span>}
                                         <Button className="btn btn-danger ms-2 btn-sm" onClick={logOut}>Logout</Button>
                                     </div>
                                     :

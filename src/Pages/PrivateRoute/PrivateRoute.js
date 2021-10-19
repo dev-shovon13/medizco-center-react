@@ -5,7 +5,7 @@ import loading from '../../images/loading.gif'
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth()
     if (isLoading) {
-        return <div className="text-center pt-5"><img src={loading} alt="" /></div>
+        return <div className="text-center pt-5 w-75 mx-auto"><img src={loading} alt="" className="img-fluid" /></div>
     }
     return (
         <Route
