@@ -19,7 +19,7 @@ import Services from './Pages/Services/Services';
 import Team from './Pages/Team/Team';
 import Review from './Pages/Review/Review';
 import Blogs from './Pages/Blogs/Blogs';
-import Service from './Pages/Services/Service/Service';
+import ServiceInfo from './Pages/Services/ServiceInfo/ServiceInfo';
 
 function App() {
   return (
@@ -58,11 +58,11 @@ function App() {
             <Services />
             <Footer />
           </Route>
-          <Route exact path="/:id/:slug">
+          <PrivateRoute exact path="/service/:id">
             <Header />
-            <Service />
+            <ServiceInfo />
             <Footer />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/team">
             <Header />
             <Team />

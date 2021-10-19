@@ -80,11 +80,9 @@ const useFirebase = () => {
 
     const handleName = (e) => {
         setName(e.target.value);
-        console.log(e.target.value);
     }
 
     const setUserName = () => {
-        console.log(name);
         updateProfile(auth.currentUser, {
             displayName: name
         }).then(() => {
