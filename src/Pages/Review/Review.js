@@ -8,8 +8,8 @@ import './Review.css'
 const Review = () => {
     return (
         <div className="bg">
-            <Container className="py-5">
-                <div className="py-5 text-center text-md-start">
+            <Container className="pb-5 pt-3">
+                <div className="py-3 text-center text-md-start">
                     <h5 className="color">TESTIMONIAL</h5>
                     <h1 className="service-txt w-50 mx-auto mx-md-0 review-txt">What Says Our Happy Patients</h1>
                 </div>
