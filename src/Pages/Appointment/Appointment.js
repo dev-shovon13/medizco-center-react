@@ -9,7 +9,7 @@ const Appointment = () => {
     const formControl = (e) => {
         e.preventDefault()
     }
-    const [date, setDate] = useState("new Date()");
+    const [date, setDate] = useState(new Date());
     const { id } = useParams()
     const doctor = doctors.find(item => item.id === parseInt(id))
     const { img, name, department } = doctor
@@ -23,7 +23,7 @@ const Appointment = () => {
                     <div className="mb-3 border">
                         <h5 className="border-bottom py-2 bg-light">Appointment of</h5>
                         <div className="d-flex align-items-center">
-                            <img src={img} alt="" height="120px" className="me-3 rounded-circle p-3" />
+                            <img src={img} alt="" height="120px" className="rounded-circle p-3" />
                             <div>
                                 <h5 className="fw-light">{name}</h5>
                                 <p>Specialty: <span className="text-success fw-bold">{department}</span></p>

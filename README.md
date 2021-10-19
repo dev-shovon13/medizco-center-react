@@ -1,6 +1,6 @@
 # Medizco Center
 
-Project Link: [Medizco Center](https://medizco-center.netlify.app/home).
+## Project Link: [Medizco Center](https://medizco-center.netlify.app/home)
 
 # What I have used in this React Project
 	-➤ HTML5
