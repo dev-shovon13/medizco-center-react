@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import './Team.css'
 import { Link } from 'react-router-dom';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
+
 
 const Team = () => {
     // rendering data into UI 
@@ -28,7 +30,7 @@ const Team = () => {
                     {
                         doctors.map(doctor => {
                             return <Col key={doctor.id} xs={12} md={6} lg={3}>
-                                <div className="border rounded">
+                                <div className="border rounded h-100">
                                     <div className="doctor-img">
                                         <img src={doctor.img} alt="" className="img-fluid" />
                                         <div className="socialIcons text-center w-100">
@@ -51,6 +53,7 @@ const Team = () => {
                     }
                 </Row>
                 <Button variant="primary" className="fs-5 py-1 px-5 mt-5">More Doctors</Button>
+                <ScrollButton />
             </Container>
         </div>
     );

@@ -4,6 +4,7 @@ import About from '../About/About';
 import Services from '../Services/Services';
 import Review from '../Review/Review';
 import './Home.css'
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <About />
             <Services />
             <Review />
+            <ScrollButton />
         </>
     );
 };

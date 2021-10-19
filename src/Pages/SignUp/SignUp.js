@@ -8,6 +8,7 @@ import signup from '../../images/signup.png'
 import google from '../../images/google.png'
 
 import './SignUp.css'
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 
 const SignUp = () => {
     // imports 
@@ -121,6 +122,7 @@ const SignUp = () => {
                     <p className="text-secondary pt-2">Already have an Account ? <NavLink to="/login" className="text-decoration-none"><span className="text-info fw-bold">Log In</span></NavLink></p>
                 </div>
             </div>
+            <ScrollButton />
         </div>
     );
 };

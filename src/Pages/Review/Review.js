@@ -2,6 +2,7 @@ import { faQuoteRight, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import './Review.css'
 
 const Review = () => {
@@ -75,6 +76,7 @@ const Review = () => {
                     </Col>
                 </Row>
             </Container>
+            <ScrollButton />
         </div>
     );
 };

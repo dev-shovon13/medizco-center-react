@@ -16,6 +16,11 @@
     color: #046FE5;
 }
 /* using some media query  */
+@media (max-width:668px) { 
+.log-sign{
+    width: 95% !important;
+}
+}
 @media (max-width:992px) { 
 .login-form{
 order: 2;

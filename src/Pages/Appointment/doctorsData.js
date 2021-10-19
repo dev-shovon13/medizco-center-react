@@ -1,13 +1,13 @@
 const data = [
     {
         id: 1,
-        name: "PROF.DR.ENAMUL KARIM",
+        name: "PROF. DR. ENAMUL KARIM",
         department: "Medicine",
         img: "https://i.ibb.co/b5GYShK/1.jpg"
     },
     {
         id: 2,
-        name: "PROF.DR.Q.TARIQUL ISLAM",
+        name: "PROF. DR. TARIQUL ISLAM",
         department: "Medicine",
         img: "https://i.ibb.co/y4wFJJC/2.jpg"
     },
@@ -25,13 +25,13 @@ const data = [
     },
     {
         id: 5,
-        name: "DR. TITU MIAH",
+        name: "PROF. DR. TITU MIAH",
         department: "Gynaecology",
         img: "https://i.ibb.co/27h1Vmy/5.jpg"
     },
     {
         id: 6,
-        name: "PROF. FERDOUSI ISLAM",
+        name: "PROF. DR. FERDOUSI ISLAM",
         department: "Medicine",
         img: "https://i.ibb.co/7gmnLgW/6.jpg"
     },
@@ -45,7 +45,7 @@ const data = [
         id: 8,
         name: "DR. S. F. NARGIS",
         department: "Gynaecology",
-        img: "https://i.ibb.co/GkTxC9C/8.jpg"
+        img: "https://i.ibb.co/0ckVt10/11.jpg"
     },
     {
         id: 9,
@@ -63,7 +63,7 @@ const data = [
         id: 11,
         name: "DR. FATEMA RAHMAN",
         department: "Gynaecology",
-        img: "https://i.ibb.co/0ckVt10/11.jpg"
+        img: "https://i.ibb.co/GkTxC9C/8.jpg"
     },
     {
         id: 12,

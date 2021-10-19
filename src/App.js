@@ -7,20 +7,20 @@ import {
 } from "react-router-dom";
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import TopBar from './Pages/Header/TopBar/TopBar';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
-import NotFound from './Pages/NotFound/NotFound'
-import Footer from './Pages/Footer/Footer';
 import LogIn from './Pages/LogIn/LogIn';
 import SignUp from './Pages/SignUp/SignUp';
-import TopBar from './Pages/Header/TopBar/TopBar';
 import About from './Pages/About/About';
 import Services from './Pages/Services/Services';
+import ServiceInfo from './Pages/Services/ServiceInfo/ServiceInfo';
 import Team from './Pages/Team/Team';
+import Appointment from './Pages/Appointment/Appointment';
 import Review from './Pages/Review/Review';
 import Blogs from './Pages/Blogs/Blogs';
-import ServiceInfo from './Pages/Services/ServiceInfo/ServiceInfo';
-import Appointment from './Pages/Appointment/Appointment';
+import Footer from './Pages/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound'
 
 function App() {
   return (

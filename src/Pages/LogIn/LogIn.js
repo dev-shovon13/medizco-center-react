@@ -7,6 +7,7 @@ import login from '../../images/login.png'
 import google from '../../images/google.png'
 import useAuth from '../../hooks/useAuth';
 import './LogIn.css'
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 
 const LogIn = () => {
     // imports 
@@ -107,6 +108,7 @@ const LogIn = () => {
                     <p className="text-secondary pt-3">New Member ? <NavLink to="/signup" className="text-decoration-none"><span className="text-info fw-bold">Register</span></NavLink></p>
                 </div>
             </div>
+            <ScrollButton />
         </div>
     );
 };

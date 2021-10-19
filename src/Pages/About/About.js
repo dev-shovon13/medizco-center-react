@@ -2,6 +2,7 @@ import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import aboutImg from '../../images/about.png'
 import './About.css'
 
@@ -18,7 +19,7 @@ const About = () => {
                             <div className="text-center text-md-start ">
                                 <h5 className="color">ABOUT US</h5>
                                 <h1 className="">Award Winning Hospital Since 2001</h1>
-                                <p className="text-secondary">A hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment.</p>
+                                <p className="text-secondary">Medizco center has all the characteristics of a world-class hospital with wide range of services and specialists, equipments and technology, ambience and service quality. The skilled nurses, technologists aided by state-of-the-art equipments, provide a congenial infrastructure for the medical professionals in providing healthcare of international standards.</p>
                             </div>
                             <div className="mt-4 text-start">
                                 <div className="d-flex mb-2">
@@ -43,6 +44,7 @@ const About = () => {
                     </Col>
                 </Row>
             </div>
+            <ScrollButton />
         </div>
     );
 };

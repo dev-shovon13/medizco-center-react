@@ -7,6 +7,17 @@
     display: block;
     height:55px
 }
+/* .top-icon-1, .top-icon-2, .top-icon-3, .top-icon-4{ */
+.top-opacity{
+    opacity: 0.7;
+    transition: all .3s;
+    cursor: pointer;
+}
+.top-opacity:hover{
+    transform: scale(1.07);
+}
+
+
 @media (max-width:992px) {
 .top-bar{
     display: none;

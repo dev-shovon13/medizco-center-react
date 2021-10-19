@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Button } from 'react-bootstrap';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import Blog from './Blog/Blog';
 import blogs from "./blogsData"
 
@@ -18,6 +19,7 @@ const Blogs = () => {
                     <Button variant="outline-primary" className="fs-5 py-1 px-5 mt-5">View More Blogs</Button>
                 </div>
             </Container>
+            <ScrollButton />
         </div>
     );
 };

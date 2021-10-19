@@ -16,6 +16,9 @@
     .serviceInfo-img{
         height: 150px !important;
     }
+    .service-info{
+        width: 95% !important;
+    }
 }
 @media (max-width:992px){
     .service-txt{
