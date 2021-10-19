@@ -8,7 +8,7 @@ const Slider = () => {
         <Carousel>
             {
                 banners.map(banner => {
-                    return <Carousel.Item>
+                    return <Carousel.Item key={banner.id}>
                         <img
                             className="d-block w-100 slider-img"
                             src={banner.img}

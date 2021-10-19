@@ -7,7 +7,7 @@ const Service = (props) => {
     const { id, img, name, info } = props.service
     return (
         <Col xs={12} md={6} lg={4}>
-            <div className="bg-white p-4 rounded shadow h-100">
+            <div className="bg-white p-4 rounded shadow h-100 service-item">
                 <img src={img} alt="" className="img-fluid service-img" />
                 <h5 className="fw-bold my-2">{name}</h5>
                 <p className="text-secondary">{info}</p>

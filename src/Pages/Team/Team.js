@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import './Team.css'
+import { Link } from 'react-router-dom';
 
 const Team = () => {
     // rendering data into UI 
@@ -12,9 +15,10 @@ const Team = () => {
             .then(res => res.json())
             .then(data => setDoctors(data))
     }, [])
+
     return (
         <div>
-            <Container className="py-3 text-center">
+            <Container className="pt-3 pb-5 text-center">
                 <div className="text-center pb-5">
                     <h5 className="text-primary pt-5">OUR TEAM</h5>
                     <h1 className="service-txt">Our Expert Doctors</h1>
@@ -23,13 +27,23 @@ const Team = () => {
                 <Row className="g-4">
                     {
                         doctors.map(doctor => {
-                            return <Col xs={12} md={6} lg={3}>
+                            return <Col key={doctor.id} xs={12} md={6} lg={3}>
                                 <div className="border rounded">
-                                    <img src={doctor.img} alt="" className="img-fluid" />
+                                    <div className="doctor-img">
+                                        <img src={doctor.img} alt="" className="img-fluid" />
+                                        <div className="socialIcons text-center w-100">
+                                            <FontAwesomeIcon icon={faFacebook} className="fa-social-icon icon-trans icon-2 fs-3 me-3" />
+                                            <FontAwesomeIcon icon={faTwitter} className="fa-social-icon icon-trans icon-1 fs-3 me-3" />
+                                            <FontAwesomeIcon icon={faInstagram} className="fa-social-icon icon-trans icon-3 fs-3 me-3" />
+                                            <FontAwesomeIcon icon={faLinkedin} className="fa-social-icon icon-trans icon-4 fs-3" />
+                                        </div>
+                                    </div>
                                     <div className="p-2 pb-3">
                                         <h5 className="mt-3 fw-light">{doctor.name}</h5>
                                         <p className="text-secondary fs-5 fw-light">Speciality: <span className="text-success fw-normal">{doctor.department}</span></p>
-                                        <div className="btn btn-outline-success btn-sm">Get Appointment</div>
+                                        <Link to={`/appointment/${doctor.id}`}>
+                                            <button className="btn btn-outline-success btn-sm" >Get Appointment</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </Col>

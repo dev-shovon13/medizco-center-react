@@ -20,6 +20,7 @@ import Team from './Pages/Team/Team';
 import Review from './Pages/Review/Review';
 import Blogs from './Pages/Blogs/Blogs';
 import ServiceInfo from './Pages/Services/ServiceInfo/ServiceInfo';
+import Appointment from './Pages/Appointment/Appointment';
 
 function App() {
   return (
@@ -68,6 +69,11 @@ function App() {
             <Team />
             <Footer />
           </Route>
+          <PrivateRoute exact path="/appointment/:id">
+            <Header />
+            <Appointment />
+            <Footer />
+          </PrivateRoute>
           <Route path="/review">
             <Header />
             <Review />

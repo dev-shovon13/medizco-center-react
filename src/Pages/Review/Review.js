@@ -28,7 +28,7 @@ const Review = () => {
                                         <FontAwesomeIcon icon={faStarHalfAlt} className="me-2 text-warning" />
                                     </div>
                                 </div>
-                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "70px", color: "#EEEEEE" }} />
+                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "55px", color: "#EEEEEE" }} />
                             </div>
                             <p className="text-secondary mt-4 px-4">The doctor who treated me was extremely patience and kind to me. I truly appreciate the service I got from the hospital in particular to doctors</p>
                         </div>
@@ -48,7 +48,7 @@ const Review = () => {
                                         <FontAwesomeIcon icon={faStar} className="me-2 text-warning" />
                                     </div>
                                 </div>
-                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "70px", color: "#EEEEEE" }} />
+                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "55px", color: "#EEEEEE" }} />
                             </div>
                             <p className="text-secondary mt-4 px-4">Dr. Castañeda is a confident, caring, informative provider that I have complete faith and trust in.</p>
                         </div>
@@ -68,7 +68,7 @@ const Review = () => {
                                         <FontAwesomeIcon icon={faStarHalfAlt} className="me-2 text-warning" />
                                     </div>
                                 </div>
-                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "70px", color: "#EEEEEE" }} />
+                                <FontAwesomeIcon icon={faQuoteRight} className="me-2 right-quote" style={{ fontSize: "55px", color: "#EEEEEE" }} />
                             </div>
                             <p className="text-secondary mt-4 px-4">Excellent visit. This was for a second opinion and an attempt to see what help an injection would do. I would have happily had him do the surgery if I lived closer.</p>
                         </div>

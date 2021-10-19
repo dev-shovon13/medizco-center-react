@@ -8,13 +8,13 @@ import './About.css'
 const About = () => {
     return (
         <div className="bg">
-            <div className="py-5 container ms-0">
+            <div className="py-5 container ms-0 ps-0">
                 <Row className="align-items-center">
-                    <Col xs={12} md={5} lg={6} className="about-box">
+                    <Col xs={12} md={5} lg={6}>
                         <img src={aboutImg} alt="" className="img-fluid py-4" />
                     </Col>
                     <Col xs={12} md={7} lg={6}>
-                        <div className="p-3 p-lg-0 mt-5 ps-4 text-center">
+                        <div className="p-3 mt-5 ps-5 text-center">
                             <div className="text-center text-md-start ">
                                 <h5 className="color">ABOUT US</h5>
                                 <h1 className="">Award Winning Hospital Since 2001</h1>

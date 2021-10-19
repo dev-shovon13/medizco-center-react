@@ -6,7 +6,6 @@ import services from "./serviceData"
 const ServiceInfo = () => {
     const { id } = useParams()
     const service = services.find(item => item.id === parseInt(id))
-    console.log(service);
     const { img, name, info } = service
     return (
         <div className="w-75 mx-auto pb-5 pt-3">

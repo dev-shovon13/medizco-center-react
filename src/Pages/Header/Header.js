@@ -39,7 +39,6 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-
                             {
                                 user.displayName || user.email ?
                                     <div className="d-flex align-items-center justify-content-center">
@@ -53,7 +52,7 @@ const Header = () => {
                                     :
                                     <div className="d-flex justify-content-center">
                                         <NavLink to="/login">
-                                            <Button variant="outline-primary" className="me-lg-3 mb-2 mb-lg-0"><FontAwesomeIcon icon={faFingerprint} className="me-2" />Login</Button>
+                                            <Button variant="outline-primary" className="me-3 mb-2 mb-lg-0"><FontAwesomeIcon icon={faFingerprint} className="me-2" />Login</Button>
                                         </NavLink>
                                         <NavLink to="/signup">
                                             <Button variant="primary"><FontAwesomeIcon icon={faSignInAlt} className="me-2" />Signup</Button>
