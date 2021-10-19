@@ -11,7 +11,14 @@
     transform: scale(1.02);
     cursor: pointer;
 }
-
+.detail-img{
+    height: 180px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+.detail-img:hover{
+    transform: scale(1.04);
+}
 @media (max-width:668px){
     .serviceInfo-img{
         height: 150px !important;
@@ -19,9 +26,17 @@
     .service-info{
         width: 95% !important;
     }
+    .detail-img{
+    width: 250px;
+}
 }
 @media (max-width:992px){
     .service-txt{
         font-size: 30px;
     }
+}
+@media (min-width:668px) and (max-width:992px){
+    .detail-img{
+    height: 140px;
+}
 }
