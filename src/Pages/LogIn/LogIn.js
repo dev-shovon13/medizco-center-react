@@ -6,8 +6,9 @@ import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import login from '../../images/login.png'
 import google from '../../images/google.png'
 import useAuth from '../../hooks/useAuth';
-import './LogIn.css'
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import { Helmet } from 'react-helmet';
+import './LogIn.css'
 
 const LogIn = () => {
     // imports 
@@ -72,6 +73,10 @@ const LogIn = () => {
     }
     return (
         <div className="log-in-bg pt-5 pb-5 text-center">
+            <Helmet>
+                <title>Login | Medizco Center</title>
+                <meta name="This is the login page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <div className="container mb-5">
                 <div className="bg-white rounded shadow p-5 pb-2 g-4 w-75 mx-auto log-sign">
                     <div className="row align-items-center">

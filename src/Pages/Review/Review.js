@@ -3,11 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import { Helmet } from 'react-helmet';
 import './Review.css'
 
 const Review = () => {
     return (
         <div className="bg">
+            <Helmet>
+                <title>Review | Medizco Center</title>
+                <meta name="This is the review page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <Container className="pb-5 pt-3">
                 <div className="py-3 text-center text-md-start">
                     <h5 className="color">TESTIMONIAL</h5>

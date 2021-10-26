@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import Service from './Service/Service';
+import { Helmet } from 'react-helmet';
 import './Services.css'
 
 const Services = () => {
@@ -13,6 +14,10 @@ const Services = () => {
     }, [])
     return (
         <div className="bg-service pb-5">
+            <Helmet>
+                <title>Services | Medizco Center</title>
+                <meta name="This is the services page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <Container>
                 <div className="text-center py-5">
                     <h5 className="color">WHAT WE DO</h5>

@@ -4,11 +4,16 @@ import React from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import aboutImg from '../../images/about.png'
+import { Helmet } from 'react-helmet';
 import './About.css'
 
 const About = () => {
     return (
         <div className="bg">
+            <Helmet>
+                <title>About | Medizco Center</title>
+                <meta name="This is the About page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <div className="py-5 container ms-0 ps-0">
                 <Row className="align-items-center">
                     <Col xs={12} md={5} lg={6}>

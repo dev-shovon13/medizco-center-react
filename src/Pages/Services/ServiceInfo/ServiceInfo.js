@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import ScrollButton from '../../../components/ScrollButton/ScrollButton';
 import services from "./serviceData"
+import { Helmet } from 'react-helmet';
 
 
 const ServiceInfo = () => {
@@ -10,6 +11,10 @@ const ServiceInfo = () => {
     const { img, name, info, img1, img2, img3 } = service
     return (
         <div className="w-75 mx-auto pb-5 pt-3 service-info">
+            <Helmet>
+                <title>{name} | Medizco Center</title>
+                <meta name="This is the service details page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <div className="bg-white p-4 pt-1 rounded shadow text-center">
                 <img src={img} alt="" className="img-fluid serviceInfo-img" style={{ height: "300px" }} />
                 <div>

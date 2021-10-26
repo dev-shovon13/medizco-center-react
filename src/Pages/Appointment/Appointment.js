@@ -4,6 +4,8 @@ import { useParams } from 'react-router';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import appointment from '../../images/appointment.png'
 import doctors from './doctorsData'
+import { Helmet } from 'react-helmet';
+
 
 const Appointment = () => {
     const formControl = (e) => {
@@ -15,6 +17,10 @@ const Appointment = () => {
     const { img, name, department } = doctor
     return (
         <Container className="pt-3 pb-5">
+            <Helmet>
+                <title>Appointment | Medizco Center</title>
+                <meta name="This is the appointment page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <Row className="g-4 align-items-center">
                 <Col sm={12} md={6}>
                     <img src={appointment} alt="" className="img-fluid" />

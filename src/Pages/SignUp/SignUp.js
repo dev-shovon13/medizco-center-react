@@ -1,14 +1,14 @@
+import React from 'react';
 import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFingerprint } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import ScrollButton from '../../components/ScrollButton/ScrollButton';
+import { Helmet } from 'react-helmet';
 import signup from '../../images/signup.png'
 import google from '../../images/google.png'
-
 import './SignUp.css'
-import ScrollButton from '../../components/ScrollButton/ScrollButton';
 
 const SignUp = () => {
     // imports 
@@ -75,6 +75,10 @@ const SignUp = () => {
     }
     return (
         <div className="sign-up-bg text-center">
+            <Helmet>
+                <title>Sign Up | Medizco Center</title>
+                <meta name="This is the signup page of Medizco Center" content="Medizco Center- Hospital Website" />
+            </Helmet>
             <div className="container py-5">
                 <div className="bg-white rounded shadow p-4 g-4 w-75 mx-auto log-sign">
                     <div className="row  align-items-center">
