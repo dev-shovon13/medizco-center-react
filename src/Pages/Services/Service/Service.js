@@ -10,7 +10,7 @@ const Service = (props) => {
     const { id, img, name, info } = props.service
 
     const notify = () => {
-        if (!user.displayName || !user.email) {
+        if (!user.uid) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',

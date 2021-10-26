@@ -5,9 +5,9 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fre
 import { Link } from 'react-router-dom';
 import ScrollButton from '../../components/ScrollButton/ScrollButton';
 import { Helmet } from 'react-helmet';
-import './Team.css'
 import useAuth from '../../hooks/useAuth';
 import Swal from 'sweetalert2'
+import './Team.css'
 
 
 const Team = () => {
@@ -23,7 +23,7 @@ const Team = () => {
     }, [])
 
     const notify = () => {
-        if (!user.displayName || !user.email) {
+        if (!user.uid) {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
